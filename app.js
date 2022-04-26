@@ -1,9 +1,13 @@
 new Vue({
     el: "#app",
     data: {
-        title: "kanon",
+        title: "http://google.com",
         isTrue: true,
-        cars: ['kanon', 'kpol'], 
+        a: 10,
+        b: 200,
+        c: 30,
+        name:"kadnon",
+        cars: ['kanon', 'kpol','ayon'], 
         obj: {
             a: "history",
             b:"culture",
@@ -11,7 +15,7 @@ new Vue({
     },
     methods: {
         getting(){
-            return this.obj.a;
+            return this.title;
         }
     }
 })
