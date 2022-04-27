@@ -1,15 +1,15 @@
 new Vue({
     el: "#app",
     data: {
-        name:"kanon"
+        a: 0,
+        link: "https://www.google.com/",
+        obj: {
+            name:"ddd"
+        }
     },
     methods: {
-        render() {
-            setTimeout(() => {
-                this.name = "mukti";
-            },1000)
+        increment() {
+            this.a += 1;
         }
     }
-
-}
-)
+})
