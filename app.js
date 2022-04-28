@@ -1,15 +1,10 @@
-new Vue({
-    el: "#app",
+const html = `<div>My name is {{name}}</div>`;
+const scope1 = new Vue({
     data: {
-        a: 0,
-        link: "https://www.google.com/",
-        obj: {
-            name:"ddd"
-        }
+        name: "kanon"
     },
-    methods: {
-        increment() {
-            this.a += 1;
-        }
-    }
+    template:html
 })
+setTimeout(() => {
+    scope1.$mount('#app')
+},2000);
