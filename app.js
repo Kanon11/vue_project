@@ -1,10 +1,12 @@
-const html = `<div>My name is {{name}}</div>`;
-const scope1 = new Vue({
-    data: {
-        name: "kanon"
+
+Vue.component('x', {
+    data() {
+        return {
+            name: 'kanon',
+        }
     },
-    template:html
+    template: `<p>{{name}}</p>`
+});
+new Vue({
+    el: "#app"
 })
-setTimeout(() => {
-    scope1.$mount('#app')
-},2000);
