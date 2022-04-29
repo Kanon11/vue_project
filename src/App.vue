@@ -1,29 +1,30 @@
 <template>
   <div>
-  <app-head></app-head>
+    <VueProjectHeader></VueProjectHeader>
     <h1>{{ name }}</h1>
     <h2>{{ age }}</h2>
-    <app-foot></app-foot>
+    <VueProjectFooter></VueProjectFooter>
   </div>
 </template>
 <script>
-  import VueProjectHeader from './Components/Header_Footer/header.vue';
-  import VueProjectFooter from './Components/Header_Footer/footer.vue';
+import VueProjectFooter from "./Components/Header_Footer/footer.vue";
+import  VueProjectHeader  from './Components/Header_Footer/header.vue'
 export default {
-
   data() {
     return {
       name: "kanon",
       age: 29,
     };
   },
-  components:{
-    'app-head':VueProjectHeader,
-    'app-foot':VueProjectFooter
-
-  }
+  components: {
+    VueProjectFooter,
+    VueProjectHeader
+  },
 };
 </script>
 
 <style  scoped>
+h1{
+  color: aquamarine;
+}
 </style>
