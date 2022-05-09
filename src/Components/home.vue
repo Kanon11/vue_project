@@ -1,29 +1,28 @@
 <template>
-  <div>
-    <h1>powered by {{ name }}</h1>
-    <hr />
-    <child :name="n" :tec="Technology" :f="getDate"></child>
+  <div v-for="user in users" :key="user.name">
+    <user :user="user" :getUsername="getUsername"></user>
   </div>
 </template>
 <script>
-import child from './Child.vue'
+import user from "./user.vue";
+
 export default {
   name: "homeWork",
-  components:{
-    child:child,
-  },
-  props: {
-    name: String,
+  components: {
+    user: user,
   },
   data() {
     return {
-      n:"kanon",
-      Technology: ["c", "java", "php", "c#"],
+      users: [
+        { name: "kanon", email: "kanon@gmail.com" },
+        { name: "mukti", email: "mukti@gmail.com" },
+        { name: "kpol", email: "kpol@gmail.com" },
+      ],
     };
   },
   methods:{
-    getDate(){
-      alert("parent function called");
+    getUsername(name){
+      alert(name);
     }
   }
 };
