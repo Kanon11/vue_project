@@ -1,14 +1,15 @@
 <template>
   <div>
-  <homeWork name="kanon"></homeWork>
+  <htmltag></htmltag>
   </div>
 </template>
 <script>
-  import x from './Components/home.vue';
+import htmltag from './Components/htmltag.vue'
 export default {
 
   components:{
-    'homeWork':x,
+
+    htmltag
 
   }
 };
