@@ -1,15 +1,15 @@
 <template>
   <div>
-  <htmltag></htmltag>
+  <Parent></Parent>
   </div>
 </template>
 <script>
-import htmltag from './Components/htmltag.vue'
+import Parent from './Components/parent.vue'
 export default {
 
   components:{
 
-    htmltag
+    Parent
 
   }
 };
