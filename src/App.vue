@@ -1,15 +1,15 @@
 <template>
   <div>
-  <Parent></Parent>
+  <home></home>
   </div>
 </template>
 <script>
-import Parent from './Components/parent.vue'
+import home from './Components/home.vue'
 export default {
 
   components:{
 
-    Parent
+    home
 
   }
 };
